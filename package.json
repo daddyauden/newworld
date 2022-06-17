@@ -1,0 +1,23 @@
+{
+  "name": "newworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "@types/node": "^18.0.0",
+    "jest": "^28.1.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.3"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "rimraf ./dist && tsc",
+    "dev": "npm run build && node dist/src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
